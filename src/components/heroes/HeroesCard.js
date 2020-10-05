@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export const HeroesCard = ({
     id,
@@ -23,6 +24,9 @@ export const HeroesCard = ({
                             (alter_ego !== characters)
                             && <p className="card-text">{characters}</p> 
                         }
+                        <Link to={`./hero/${id}`}>
+                            Más ....
+                        </Link>
                     </div>
                 </div>
             </div>
