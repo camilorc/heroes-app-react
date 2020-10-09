@@ -18,8 +18,11 @@ export const Navbar = () => {
     }
 
     return (
+
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-            
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
             <Link 
                 className="navbar-brand" 
                 to="/"
@@ -27,9 +30,8 @@ export const Navbar = () => {
                 Asociaciones
             </Link>
 
-            <div className="navbar-collapse">
-                <div className="navbar-nav">
-
+            <div className="collapse navbar-collapse navbarText">
+                <div className="navbar-nav mr-auto">
                     <NavLink 
                         activeClassName="active"
                         className="nav-item nav-link" 
@@ -58,7 +60,7 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <div className=" collapse navbar-collapse navbarText">
                 <ul className="navbar-nav ml-auto">
                     <span
                         className="nav-item nav-link"
